@@ -14,9 +14,15 @@ export default function Player() {
   //}
 
   function handlePlusClick() {
-    //player.score++;//wrong you have to say score+1
+
     setPlayer({ ...player, score: player.score + 1 });
   }
+
+  // function handleTextChange(e) {
+  //   const{name,value}=e.target;
+  //   setPlayer({...player,[name]:value});
+
+  // }
 
   function handleFirstNameChange(e) {
     setPlayer({
@@ -27,8 +33,8 @@ export default function Player() {
 
   function handleLastNameChange(e) {
     setPlayer({
-      ...player,lastName: e.target.value
-    });//use newPlayer
+      ...player, lastName: e.target.value
+    });
   }
 
   return (
